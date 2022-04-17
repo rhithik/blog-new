@@ -7,9 +7,15 @@
     <title>My Blog</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
-<body class="bg-white dark:bg-white">
+<body class="min-h-screen bg-white">
     <article class="max-w-2xl mx-auto text-gray-800">
-        <?= $post; ?>
+        <h1 class="py-6 text-3xl font-bold">
+            <?= $post->title; ?>
+        </h1>
+
+        <div class="mb-6">
+            <?= $post->body; ?>
+        </div>
     </article>
 
     <div class="max-w-2xl mx-auto mt-4">

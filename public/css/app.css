@@ -2303,17 +2303,26 @@ select {
 .mt-4 {
   margin-top: 1rem;
 }
-.mt-6 {
-  margin-top: 1.5rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 .h-full {
   height: 100%;
 }
+.min-h-full {
+  min-height: 100%;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
 .max-w-2xl {
   max-width: 42rem;
 }
-.border-t-2 {
-  border-top-width: 2px;
+.border-2 {
+  border-width: 2px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 .border-gray-300 {
   --tw-border-opacity: 1;
@@ -2333,9 +2342,6 @@ select {
 }
 .font-bold {
   font-weight: 700;
-}
-.leading-loose {
-  line-height: 2;
 }
 .text-gray-800 {
   --tw-text-opacity: 1;

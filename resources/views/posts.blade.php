@@ -7,10 +7,18 @@
     <title>My Blog</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
-<body class="bg-white h-full">
+<body class="min-h-screen bg-white">
     <?php foreach ($posts as $post) : ?>
-        <article class="max-w-2xl mx-auto text-gray-800">
-            <?= $post; ?>
+        <article class="max-w-2xl mx-auto text-gray-800 border-b-2">
+            <h1 class="py-6 text-3xl font-bold">
+                <a href="/posts/<?= $post->slug; ?>">
+                    <?= $post->title; ?>
+                </a>
+            </h1>
+
+            <div class="mb-6">
+                <?= $post->excerpt; ?>
+            </div>
         </article>
     <?php endforeach; ?>
 </body>
